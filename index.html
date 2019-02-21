@@ -17,6 +17,7 @@
         crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" media="screen" href="carousel.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+
     <script src="app.js" type="text/javascript" defer></script>
 </head>
 
@@ -70,7 +71,11 @@
 
 <section class="about">
     <a id="aboutAnchor"></a>
-    <h1 id="about-header">about</h1>
+    <div class="about-heading">
+        <h1 id="about-header">about</h1>
+
+    </div>
+    
 
 
     <div class="about-content">
@@ -100,61 +105,91 @@
 </section>
 
 <section class="portfolio">
-    <h2 id="portfolio-header">Porfolio</h2>
+    
 
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img class="d-block w-50 img" src="./images/ncnews.png" alt="First slide">
-                    <div class="caption">
-                        <a href="https://nc-news-frontend-lr.herokuapp.com/">
-                            <h5 class="caption">NC News</h5>
+    
+    <div class="contain">
+        <div class="portfolio-heading">
+            <h2 id="portfolio-header">Porfolio</h2>
+        </div>
+        <div class="row">
+            <div class="row__inner">
+                <div class="tile" id="first-tile">
+                    <div class="tile__media">
+                        <a href="https://global-weather-lr.herokuapp.com/">
+                            <img class="tile__img" src="./images//globalweather.png" alt="" />
                         </a>
-                        <p>This is my first full stack project completed as part of the Northcoders bootcamp. Backend made with Node JS and Postgres and frontend with React JS</p>
                     </div>
-           
-            </div>
-            <div class="carousel-item">
-                <img class="d-block w-50 img" src="./images/noughts-and-crosses.png" alt="Second slide">
-                <div class="caption">
-                    <a href="https://noughtsncrosses.herokuapp.com/">
-                        <h5 class="caption">Noughts and Crosses</h5>
-                    </a>
-                    <p>Classic Noughts and Crosses but highly stylized. Made with React JS</p> 
+                    <div class="tile__details">
+                        <div class="tile__title">
+                            Global Weather
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="carousel-item">
-                <div clas="image-container">
-                    <img class="d-block img" src="./images/emoji-adventure.png" alt="Third slide">
+                <div class="tile">
+                    <div class="tile__media">
+                        <a href="https://tech-test-lr.herokuapp.com/">
+                            <img class="tile__img" src="./images/github.png" alt="" />
+                        </a>
+                    </div>
+                    <div class="tile__details">
+                        <div class="tile__title">
+                            Github Search
+                        </div>
+                    </div>
                 </div>
-                
-                <div class="caption">
-                    <a href="https://emoji-adventure.herokuapp.com/">
-                        <h5>Emoji Adventure</h5>
-                    </a>
-                    <p>Filter Emoji's by title or keyword using a beautiful interface. Made with React JS</p>
+                <div class="tile">
+                    <div class="tile__media">
+                        <a href="https://noughtsncrosses.herokuapp.com/">
+                            <img class="tile__img" src="./images/noughts.png" alt="" />
+                        </a>
+                    </div>
+                    <div class="tile__details">
+                        <div class="tile__title">
+                            Noughts and Crosses
+                        </div>
+                    </div>
+                </div>
+                <div class="tile">
+                    <div class="tile__media">
+                        <a href="https://www.youtube.com/watch?v=jDqRVf1PC_k">
+                            <img class="tile__img" src="./images/fable.png" alt="" />
+                        </a>
+                    </div>
+                    <div class="tile__details">
+                        <div class="tile__title">
+                            Fable
+                        </div>
+                    </div>
+                </div>
+                <div class="tile">
+                    <div class="tile__media">
+                        <a href="https://nc-news-frontend-lr.herokuapp.com/users">
+                            <img class="tile__img" src="./images/nc.png" alt="" />
+                        </a>
+                    </div>
+                    <div class="tile__details">
+                        <div class="tile__title">
+                            NC News Front End
+                        </div>
+                    </div>
+                </div>
+                <div class="tile">
+                    <div class="tile__media">
+                        <a href="https://emoji-adventure.herokuapp.com/">
+                            <img class="tile__img" src="./images/emoji.png" alt="" />
+                        </a>
+                    </div>
+                    <div class="tile__details">
+                        <div class="tile__title">
+                            Emoji Adventure
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <a class="carousel-control-prev prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
     </div>
 </section>
-
-
-
-
 
 <section class="contact">
 
@@ -176,7 +211,9 @@
                 <input type="textarea" id="text-area" placeholder="Message" name="message" />
             </li>
             <li>
-                <button type="submit" id='submit-button'>Submit</button>
+                <div class="bottom-space">
+                    <button type="submit" id='submit-button'>Submit</button>
+                </div>
             </li>
         </ul>
     </form>
