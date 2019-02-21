@@ -233,6 +233,10 @@ h2 {
   font-weight: 100;
 }
 
+body {
+  background: black;
+}
+
 #phone {
   font-size: 300%;
 }
